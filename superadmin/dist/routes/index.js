@@ -1,0 +1,20 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.userRoutes = exports.authRoutes = exports.dispatcherRoutes = exports.franchiseRoutes = exports.settingsRoutes = exports.adminRoutes = exports.countryRoutes = void 0;
+const country_1 = __importDefault(require("./country"));
+exports.countryRoutes = country_1.default;
+const admin_1 = __importDefault(require("./admin"));
+exports.adminRoutes = admin_1.default;
+const settings_1 = __importDefault(require("./settings"));
+exports.settingsRoutes = settings_1.default;
+const franchise_1 = __importDefault(require("./franchise"));
+exports.franchiseRoutes = franchise_1.default;
+const dispatcher_1 = __importDefault(require("./dispatcher"));
+exports.dispatcherRoutes = dispatcher_1.default;
+const user_1 = __importDefault(require("./user"));
+exports.userRoutes = user_1.default;
+const auth_1 = __importDefault(require("./auth"));
+exports.authRoutes = auth_1.default;

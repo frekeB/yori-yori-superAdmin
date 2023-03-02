@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  superadmin:
+    build:
+      dockerfile: Dockerfile
+      context: ./superadmin
+    ports:
+      - "3108:3108"
+    container_name: superadmin
+    env_file:
+      - .env
+    restart: always
+    volumes:
+      - .:/app
+      - /app/superadmin/node_modules
